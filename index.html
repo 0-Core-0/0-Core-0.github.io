@@ -249,13 +249,13 @@ function checkResult() {
     let result = checkWinner();
     
     if (result === 10) {
-        statusText.textContent = `Bot wins!`;
+        statusText.textContent = `O kazandı`;
         gameActive = false;
     } else if (result === -10) {
-        statusText.textContent = `Player wins!`;
+        statusText.textContent = `X kazandı`;
         gameActive = false;
     } else if (result === 0) {
-        statusText.textContent = `It's a draw!`;
+        statusText.textContent = `berabere`;
         gameActive = false;
     } else {
         switchPlayer();
